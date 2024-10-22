@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Pawesome - Volunteer</title>
+    <link rel="icon" type="image/x-icon" href="Images/logo_48px.png">
+    <link rel="stylesheet" href="Stylesheets/header_footer.css">
+    <link rel="stylesheet" href="Stylesheets/volunteer.css">
+    <link rel="stylesheet" href="Stylesheets/volunteerForm.css">
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <script defer src="./Scripts/VolunteerForm.js"></script>
+
+    <header>
+      <div class="empty"></div>
+
+      <div id="websiteName_header">
+        <img id="logo_header" src="Images/logo_512px.png" alt="Pawesome logo">
+        <p>PAWESOME</p>
+      </div>
+      
+      <div class="empty"></div>
+
+      <nav id="nav_header">
+        <div id="hamburger">
+          <button id="hamburgerBtn"><label>&#8801;</label></button>
+
+          <div class="hamburgerContent">
+            <button onclick="window.location.href='homepage.html';">Home</button>
+          </div>
+          
+          <div class="empty"></div>
+          
+          <div class="hamburgerContent">
+            <button onclick="window.location.href='adoption_page.html';">Adopt</button>
+          </div>
+          
+          <div class="empty"></div>
+          
+          <div class="hamburgerContent">
+            <button onclick="window.location.href='donation.html';">Donate</button>
+          </div>
+          
+          <div class="empty"></div>
+          
+          <div class="hamburgerContent">
+            <button onclick="window.location.href='volunteer.html';">Volunteer</button>
+          </div>
+          
+          <div class="empty"></div>
+          
+          <div id="dropdown" class="hamburgerContent">
+            <button>More</button>
+  
+            <div class="dropdownContent">
+              <a>Pet Lost and Found</a>
+              <a href='pawesome_diaries.html'>Pawesome Diaries</a>
+              <a>Report Cruelty</a>
+              <a>Our Sponsors</a>
+              <a>FAQ</a>
+            </div>
+          </div>
+  
+          <div class="empty"></div>
+  
+          <div id="dropdown" class="hamburgerContent">
+            <button><img src="Images/user_512px.png" alt="User profile" id="user_header"></button>
+  
+            <div class="dropdownContent">
+              <a href="login.html">Log in</a>
+              <a href="signup.html">Sign Up</a>
+              <a href="login.html">Log Out</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="empty"></div>
+    </header>
+
+    <!--Hero Image Strip 1-->
+    <div id="hero_image">
+      <h1>Volunteer Opportunities</h1>
+      <p>All passionate and dedicated animal lovers are welcomed! Join our team to make a pawsitive difference in your community.</p>
+    </div>
+
+    <!--Volunteer Quote Strip 2-->
+    <div id="volunteer_quote">
+      <br>
+      <div id="quote_section">
+        <img src="Images/quotation.svg" alt="Open quote" id="openQuote">
+        <div class="quotefmt"></div>
+        <p id="quote">
+          In the embrace of an animal shelter, I found my purpose and witnessed the resilience of the forgotten souls.<br><b>-Nur Amira</b><br>A dedicated volunteer
+        </p>
+        <div class="quotefmt"></div>
+        <img src="Images/quotation.svg" alt="Close quote" id="closeQuote">
+      </div>
+    </div>
+
+    <!--Volunteer Duties Strip 3--->
+    <div class="volunteerDuties">
+      <div class="box Image-1"><img src="Images/animalCare.svg" alt="Animal Care Volunteer"></div>
+      <div class="box Duty 1">
+        <strong>Specialized Volunteers</strong>
+        <p>Contribute with specific skills such as:</p>
+        <ul>
+          <li>Photography</li>
+          <li>Graphic Design</li>
+          <li>Web Design</li>
+          <li>Accountants</li>
+          <li>Media specialists</li>
+          <li>Dog Trainer</li>
+        </ul>
+      </div>
+      <div class="box Image-2"><img src="Images/medical.svg" alt="Medical Volunteer"></div>
+      <div class="box Duty 2">
+        <strong>Animal Care Volunteers</strong>
+        <p>Assist in daily care of the animals with tasks such as:</p>
+        <ul>
+          <li>Clean & up-keep shelter</li>
+          <li>Feed & give water</li>
+          <li>Bath animals</li>
+          <li>Provide basic grooming</li>
+          <li>Media specialists</li>
+          <li>Socialize animals</li>
+        </ul>
+      </div>
+      <div class="box Image-3"><img src="Images/specialized.svg" alt="Specialized Volunteer"></div>
+      <div class="box Duty 3">
+        <strong>Medical Volunteers</strong>
+        <p>Volunteers with veterinary experience such as:</p>
+        <ul>
+          <li>Spay-neuter</li>
+          <li>Vaccine administering</li>
+          <li>Animal behaviorists</li>
+          <li>Policy development</li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Volunteer Form Strip 4-->
+    <div id="volunteer_section">
+      <div id="left">
+        <h1 class="volunteerMessage">
+          <span>Join our team!</span>
+          <p>
+            If you are interested in volunteering, please contact us by completing our form. Kindly be aware that all volunteers are expected 
+            to commit to a minimum of two hours of volunteer work.</p>
+          <div class="volunteerIcon">
+            <img src="Images/volunteerIcon.svg" alt="Volunteer Icon" id="volunteerIcon">
+          </div>
+        </h1>
+        </div>
+        <div id="right">
+          <div id="formTitle">
+            <img src="Images/logo_48px.png" alt="Pawsome Logo">
+            <h1>PAWESOME VOLUNTEERS</h1>
+          </div>
+        <form id="regForm" action="">
+
+          <div class="tab">
+          <label for="full_name">Full Name:</label>
+          <input type="text" id="full_name" name="adoptee_name">
+
+          <label for="email">Email address:</label>
+          <input type="email" id="email" name="adoptee_email">
+
+          <label for="contact_num">Contact number:</label>
+          <input type="text" id="number" name="adoptee_number">
+          
+          <label for="birthday">Date of Birth:</label>
+          <input type="date" id="birthday" name="birthday">
+          </div>
+          
+          <div class="tab">
+
+            <label for="question">Animal Shelter:</label>
+
+              <br>
+              <input type="radio" id="shelter1" name="animal_shelter" value="PAWs Subang">
+              <label for="shelter1">PAWs Subang</label>
+          
+              <br>
+              <input type="radio" id="shelter2" name="animal_shelter" value="Ipoh Animal Welfare">
+              <label for="shelter2">Ipoh Animal Welfare</label>
+          
+              <br>
+              <input type="radio" id="shelter3" name="animal_shelter" value="Penang Animal Rescue Centre">
+              <label for="shelter3">Penang Animal Rescue Centre</label><br><br>
+          
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="adopt_visit_date">
+
+            
+              <label for="question">Sessions</label>
+              <br>
+              <input type="checkbox" id="slot1" name="slot" value="8.00 a.m. - 10.00 a.m.">
+              <label for="slot1">8.00 a.m. - 10.00 a.m.</label>
+
+              <br>
+              <input type="checkbox" id="slot2" name="slot" value="10.00 a.m. - 12.00 p.m.">
+              <label for="slot2">10.00 a.m. - 12.00 p.m.</label>
+
+              <br>
+              <input type="checkbox" id="slot3" name="slot" value="12.00 p.m. - 14.00 p.m.">
+              <label for="slot3">12.00 p.m. - 14.00 p.m.</label>
+
+              <br>
+              <input type="checkbox" id="slot4" name="slot" value="14.00 p.m. - 16.00 p.m.">
+              <label for="slot4">14.00 p.m. - 16.00 p.m.</label>
+
+              <br>
+              <input type="checkbox" id="slot5" name="slot" value="16.00 p.m. - 18.00 p.m.">
+              <label for="slot5">16.00 p.m. - 18.00 p.m.</label>
+          </div>
+          
+          
+          <div style="overflow:auto;">
+            <div style="float:right;">
+              <button type="button" id="prevBtn" onclick="nextPrev(-1)">PREVIOUS</button>
+              <button type="button" id="nextBtn" onclick="nextPrev(1)">NEXT</button>
+            </div>
+          </div>
+          
+          <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+          </div>
+          
+          </form>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+      <div id="contact_footer">
+        <div id="websiteName_footer">
+          <img src="Images/logo_512px.png" alt="Logo">
+          <span>PAWESOME</span>
+        </div>
+        
+        <div>
+          Email: 
+          <a href="mailto:pawesome@gmail.com">pawesome@gmail.com</a>
+        </div>
+        
+        <div> 
+          Phone: +6011-22334455
+        </div>
+      </div>
+      
+      <div id="sitemap_footer">
+        <div id="sitemapLinks_footer">
+          <div id="sitemapColumn1_footer" >
+            <a class="firstSitemap_footer" href="homepage.html">Home</a>
+            <a class="middleSitemap_footer" href="signup.html">Sign Up</a>
+            <a class="middleSitemap_footer" href="adoption_page.html">Adopt a Pet</a>
+            <a class="middleSitemap_footer" href="donation.html">Make a Donation</a>
+            <a class="lastSitemap_footer"  href="volunteer.html">Become a Volunteer</a>
+          </div>
+          <div id="sitemapColumn2_footer">
+            <a class="firstSitemap_footer">Pet Lost and Found</a>
+            <a class="middleSitemap_footer" href="pawesome_diaries.html">Pawesome Diaries</a>
+            <a class="middleSitemap_footer">Report Cruelty</a>
+            <a class="middleSitemap_footer">Our Sponsors</a>
+            <a class="lastSitemap_footer">FAQ</a>
+          </div>
+        </div>
+
+        <div id="copyright_footer">
+          Copyright © 2023 PAWESOME
+        </div>
+      </div>
+
+      <div id="socialMedia_footer">
+        <div id="socialMediaIcons_footer">
+          <img src="Images/facebook.png" alt="Link to Facebook">
+          <img src="Images/instagram.png" alt="Link to Instagram">
+          <img src="Images/twitter.png" alt="Link to Twitter">
+          <img src="Images/youtube.png" alt="Link to Youtube">
+        </div>
+
+        <div>
+          @pawesome
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

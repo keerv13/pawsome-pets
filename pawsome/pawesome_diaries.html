@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Pawesome - Pawesome Diaries</title>
+    <link rel="icon" type="image/x-icon" href="Images/logo_48px.png">
+    <link rel="stylesheet" href="Stylesheets/header_footer.css">
+    <link rel="stylesheet" href="Stylesheets/pawesome_diaries.css">
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <header>
+      <div class="empty"></div>
+
+      <div id="websiteName_header">
+        <img id="logo_header" src="Images/logo_512px.png" alt="Pawesome logo">
+        <p>PAWESOME</p>
+      </div>
+      
+      <div class="empty"></div>
+
+      <nav id="nav_header">
+        <div id="hamburger">
+          <button id="hamburgerBtn"><label>&#8801;</label></button>
+
+          <div class="hamburgerContent">
+            <button onclick="window.location.href='homepage.html';">Home</button>
+          </div>
+          
+          <div class="empty"></div>
+          
+          <div class="hamburgerContent">
+            <button onclick="window.location.href='adoption_page.html';">Adopt</button>
+          </div>
+          
+          <div class="empty"></div>
+          
+          <div class="hamburgerContent">
+            <button onclick="window.location.href='donation.html';">Donate</button>
+          </div>
+          
+          <div class="empty"></div>
+          
+          <div class="hamburgerContent">
+            <button onclick="window.location.href='volunteer.html';">Volunteer</button>
+          </div>
+          
+          <div class="empty"></div>
+          
+          <div id="dropdown" class="hamburgerContent">
+            <button>More</button>
+  
+            <div class="dropdownContent">
+              <a>Pet Lost and Found</a>
+              <a href='pawesome_diaries.html'>Pawesome Diaries</a>
+              <a>Report Cruelty</a>
+              <a>Our Sponsors</a>
+              <a>FAQ</a>
+            </div>
+          </div>
+  
+          <div class="empty"></div>
+  
+          <div id="dropdown" class="hamburgerContent">
+            <button><img src="Images/user_512px.png" alt="User profile" id="user_header"></button>
+  
+            <div class="dropdownContent">
+              <a href="login.html">Log in</a>
+              <a href="signup.html">Sign Up</a>
+              <a href="login.html">Log Out</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="empty"></div>
+    </header>
+    
+    <main>
+      <div class="container">
+        <!--Left Sidebar-->
+        <div class="side_bar">
+          <div class="side_bar_content">
+          <!--Page Title-->
+          <div class="pawesome_diaries_banner">
+            <img src="./Images/pawesome_diaries_logo.png" alt="Pawesome Diaries Logo">
+          </div>
+          
+          <!--Adoption List-->
+          <div>
+            <h1>Latest Adoption</h1>
+            <p>May they enjoy their new lives in their forever home!</p>
+          </div>
+          <div class="gallery">
+            <div>
+              <img src="./Images/Rum.jpg" alt="A brown mixed breed cat named Rum">
+              <h1>Rum</h1>
+              <p>"Super excited to start my new life with the little guy!"</p>
+            </div>
+            <br>
+            <div>
+              <img src="./Images/Betty.jpg" alt="A brown pomeranian named Betty">
+              <h1>Betty</h1>
+              <p>"Betty's such a sweetheart, I knew she'd be a great addition to the family the moment I saw her."</p>
+            </div>
+            <br>
+            <div>
+              <img src="./Images/Mochi.png" alt="A brown mixed breed cat named Mochi">
+              <h1>Mochi</h1>
+              <p>"This quiet little one's perfect for me."</p>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <!--Main Content-->
+        <div class="main_content">
+          
+          <!--Write Post Form-->
+          <div class="post_form">
+            <div class="user_profile"> 
+              <img src="./Images/user_512px.png" alt="Your profile picture">
+            </div>
+            <div class="post_interactions">
+              <div class="post_input">
+                <textarea rows="3" placeholder="Tell us about your pet!"></textarea>
+                <div class="post_buttons">
+                  <a href="#"><img src="./Images/picture.png" class="picture" alt="GUI icon to attach pictures to the post"></a>
+                  <a href="#"><img src="./Images/film.png" class="film" alt="GUI icon to attach videos to the post"></a>
+                  <a href="#"><img src="./Images/smile.png" class="smile" alt="GUI icon to type emojis in the post"></a>
+                  <button>Post</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--First post-->
+          <div>
+            <div class="post">
+              <!--User Info-->
+              <div class="user_profile"> 
+                <img src="./Images/pfp1.jpg" alt="User maya_4ever's profile picture">
+                <div>
+                  <p>maya_4ever</p>
+                  <span>14h ago</span>
+                </div>
+
+                <!--Settings-->
+                <div class="settings">
+                  <button onclick="settingsDropdownToggle(this)" class="settings_button"><img src="./Images/settings.png" alt="GUI icon for post settings"></button> 
+                  <div class="settings_dropdown">
+                    <div class="settings_links">
+                      <a href="#">Hide post</a>
+                    </div>
+                    <div class="settings_links">
+                      <a href="#">Report post</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Post Image-->
+              <img src="./Images/post1_img1.jpg" class="post_img" alt="Picture of a blonde furred mixed breed dog.">
+              
+              <!--Post Icons-->
+              <div class="post_icons">
+                <img src="./Images/paw.png" class="paw" alt="GUI icon to give the post a paws-up">
+                <img src="./Images/comment.png" class="comment" alt="GUI icon to comment your opinion on the post">
+              </div>
+
+              <!--Post Statistics-->
+              <div class="post_stats">
+                <small>336 paws-up | 28 comments</small>
+              </div>
+              <p class="post_caption"><span>maya_4ever</span> Day 15 with this cutie. She's been nothing but a delight to have. The missus loves her, and marriage life has never been better.</p>
+              
+              <!--View Comments Link-->
+              <div class="comments_link">
+                <a href="#"><small>View comments</small></a>
+              </div>
+
+              <!--Comments-->
+              <div class="comments"> 
+                <img src="./Images/pfp2.jpg" alt="User princess_LaLa's profile picture">
+                <div>
+                  <p><span>princess_LaLa</span> Awww what a cute little doggyyyy</p>
+                </div>
+              </div>
+            </div>
+            </div>
+            
+          <!--Second post-->
+          <div>
+            <div class="post">
+              <!--User Info-->
+              <div class="user_profile"> 
+                <img src="./Images/pfp3.jpg" alt="User luna_the_brightest's profille picture">
+                <div>
+                  <p>luna_the_brightest</p>
+                  <span>3 days ago</span>
+                </div>
+                <!--Settings-->
+                <div class="settings">
+                  <button onclick="settingsDropdownToggle(this)" class="settings_button"><img src="./Images/settings.png" alt="GUI icon for post settings"></button> 
+                  <div class="settings_dropdown">
+                    <div class="settings_links">
+                      <a href="#">Hide post</a>
+                    </div>
+                    <div class="settings_links">
+                      <a href="#">Report post</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+
+              <!--Post Image-->
+              <img src="./Images/post2_img1.jpg" class="post_img" alt="Picture of black-furred mixed breed dog.">
+              
+              <!--Post Icons-->
+              <div class="post_icons">
+                <img src="./Images/paw.png" class="paw" alt="GUI icon to give the post a paws-up">
+                <img src="./Images/comment.png" class="comment" alt="GUI icon to comment your opinion on the post">
+              </div>
+
+              <!--Post Statistics-->
+              <div class="post_stats">
+                <small>1,569 paws-up | 48 comments</small>
+              </div>
+              <p class="post_caption"><span>luna_the_brightest</span> Pose for the camera!</p>
+              
+              <!--View Comments Link-->
+              <div class="comments_link">
+                <a href="#"><small>View comments</small></a>
+              </div>
+
+              <!--Comments-->
+              <div class="comments"> 
+                <img src="./Images/pfp4.jpg" alt="User purrFection's profile picture">
+                <div>
+                  <p><span>purrFection</span> How photogenic!</p>
+                </div>
+              </div>
+            </div>
+            </div>
+
+          <!--Third post-->
+          <div>
+            <div class="post">
+              <!--User Info-->
+              <div class="user_profile"> 
+                <img src="./Images/pfp5.jpg" alt="User Snowball_the_Cat's profile picture">
+                <div>
+                  <p>Snowball_the_Cat</p>
+                  <span>4 days ago</span>
+                </div>
+                <!--Settings-->
+                <div class="settings">
+                  <button onclick="settingsDropdownToggle(this)" class="settings_button"><img src="./Images/settings.png" alt="GUI icon for post settings"></button> 
+                  <div class="settings_dropdown">
+                    <div class="settings_links">
+                      <a href="#">Hide post</a>
+                    </div>
+                    <div class="settings_links">
+                      <a href="#">Report post</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Post Image-->
+              <img src="./Images/post3_img1.jpg" class="post_img" alt="Picture of a white odd-eyed cat">
+              
+              <!--Post Icons-->
+              <div class="post_icons">
+                <img src="./Images/paw.png" class="paw" alt="GUI icon to give the post a paws-up">
+                <img src="./Images/comment.png" class="comment" alt="GUI icon to comment your opinion on the post">
+              </div>
+
+              <!--Post Statistics-->
+              <div class="post_stats">
+                <small>2,156 paws-up | 52 comments</small>
+              </div>
+              <p class="post_caption"><span>Snowball_the_Cat</span> This little rascal bit my butt.</p>
+              
+              <!--View Comments Link-->
+              <div class="comments_link">
+                <a href="#"><small>View comments</small></a>
+              </div>
+
+              <!--Comments-->
+              <div class="comments"> 
+                <img src="./Images/pfp6.jpg" alt="User Jojo's_Bizarre_Catventure's profile picture">
+                <div>
+                  <p><span>Jojo's_Bizarre_Catventure</span> An odd-eyed cat!!!</p>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <!--Load more-->
+            <button type="button" class="load_more">Load More</button>
+          </div>
+
+      </div> 
+    </main>
+
+    <footer>
+      <div id="contact_footer">
+        <div id="websiteName_footer">
+          <img src="Images/logo_512px.png" alt="Logo">
+          <span>PAWESOME</span>
+        </div>
+        
+        <div>
+          Email: 
+          <a href="mailto:pawesome@gmail.com">pawesome@gmail.com</a>
+        </div>
+        
+        <div> 
+          Phone: +6011-22334455
+        </div>
+      </div>
+      
+      <div id="sitemap_footer">
+        <div id="sitemapLinks_footer">
+          <div id="sitemapColumn1_footer" >
+            <a class="firstSitemap_footer" href="homepage.html">Home</a>
+            <a class="middleSitemap_footer" href="signup.html">Sign Up</a>
+            <a class="middleSitemap_footer" href="adoption_page.html">Adopt a Pet</a>
+            <a class="middleSitemap_footer" href="donation.html">Make a Donation</a>
+            <a class="lastSitemap_footer"  href="volunteer.html">Become a Volunteer</a>
+          </div>
+          <div id="sitemapColumn2_footer">
+            <a class="firstSitemap_footer">Pet Lost and Found</a>
+            <a class="middleSitemap_footer" href="pawesome_diaries.html">Pawesome Diaries</a>
+            <a class="middleSitemap_footer">Report Cruelty</a>
+            <a class="middleSitemap_footer">Our Sponsors</a>
+            <a class="lastSitemap_footer">FAQ</a>
+          </div>
+        </div>
+
+        <div id="copyright_footer">
+          Copyright © 2023 PAWESOME
+        </div>
+      </div>
+
+      <div id="socialMedia_footer">
+        <div id="socialMediaIcons_footer">
+          <img src="Images/facebook.png" alt="Link to Facebook">
+          <img src="Images/instagram.png" alt="Link to Instagram">
+          <img src="Images/twitter.png" alt="Link to Twitter">
+          <img src="Images/youtube.png" alt="Link to Youtube">
+        </div>
+
+        <div>
+          @pawesome
+        </div>
+      </div>
+    </footer>
+
+    <script src="./Scripts/pawesome_diaries.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pawesome - Sign Up</title>
+    <link rel="stylesheet" href="Stylesheets/login_signup.css">
+    <link rel="stylesheet" href="Stylesheets/signup.css">
+    <link rel="icon" type="image/x-icon" href="Images/logo_48px.png">
+    <meta charset="utf-8">
+  </head>
+  
+  <body>
+    <script defer src="Scripts/signup.js"></script>
+
+    <div id="container">
+      <a id="back" href="login.html">
+        ←
+      </a>
+
+      <form id="form">
+        <img src="Images/logo_512px.png" id="logo">
+        <h1>SIGN UP</h1>
+
+        <div class="inputField">
+          <div class="inputTitle">
+            <img src="Images/email_128px.png" class="icon">
+            <label for="email">Email</label>
+          </div>
+          <input id="email" name="email" type="text">
+          <div class="errorMessageDisplay"></div>
+        </div>
+
+        <div class="inputField">
+          <div class="inputTitle">
+            <img src="Images/lock_128px.png" class="icon">
+            <label for="password1">Password</label>
+          </div>
+          <input id="password1" name="password1" type="password">
+          <div class="errorMessageDisplay"></div>
+        </div>
+
+        <div class="inputField">
+          <div class="inputTitle">
+            <img src="Images/lock_128px.png" class="icon">
+            <label for="password2">Confirm Password</label>
+          </div>
+          <input id="password2" name="password2" type="password">
+          <div class="errorMessageDisplay"></div>
+        </div>
+        
+        <div id="buttonDiv">
+          <button id="submitBtn">
+            SIGN UP
+          </button>
+        </div>
+
+        <div id="alternative">
+          <p>Or sign up with</p>
+          <img src="Images/facebook.png">
+          <img src="Images/twitter.png">
+          <img src="Images/google.png">
+        </div>
+  
+        <div id="signup">
+          <p>
+            I already have an account.
+          </p>
+          <a href="login.html">Login</a>
+        </div>
+  
+        <a id="guest" href="homepage.html">Continue as a Guest</a>
+      </form>
+    </div>
+    
+  </body>
+</html>

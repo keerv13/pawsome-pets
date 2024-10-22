@@ -1,0 +1,267 @@
+
+.Intro {
+    text-align: center;
+    background-color: #53c4c7;
+    background-image: url('../Images/Background.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover; 
+    padding: 15vh;
+    color: #FFFDFA;
+}
+
+.Information {
+    background-color: #53c4c7;
+    background-size:cover ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.image {
+    text-align: center;
+    max-width: 25vh;
+    height: auto;
+}
+
+.logo h{
+    font-size: 4vh;
+}
+.logo p{
+    font-size: 2vh;
+    text-align: center;
+    background-color: #53C4C7;
+}
+
+.logo image{
+    max-width: 80%;
+    height: auto;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.Information hr{
+    border-color:black;
+}
+.Information h1 {
+    text-align: center;
+    font-size: 4vh;
+}
+.Information h2 {
+    font-size: 3vh;
+    text-align: center;
+}
+
+.Information h3 {
+    font-size: 2vh;
+    text-align: center;
+}
+
+.Information p {
+    font-size: 2vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;/* Adjust the gap between pictures as needed */
+    margin: 5vh;
+    text-align: center;
+  }
+    /* Style the pictures to fit within the grid cells */
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-item img{
+    max-width: 80%;
+    height: auto;
+    cursor: pointer;
+}
+
+.grid-item p{
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+.round-button {
+    width: 6vh;
+    height: 6vh;
+    background-color: #53C4C7;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+.round-button:hover{
+    background-color: #FFB449;
+}
+  
+.arrow-left {
+    color: #FFFDFA;
+    font-size: 40px;
+    position: absolute;
+    transform: translate(-56%, -56%);
+}
+  
+.arrow-right {
+    color: #FFFDFA;
+    font-size: 20px;
+    position: absolute;
+    transform: translate(-45%, -45%);
+}
+.round-box {
+    width: 6vh;
+    height: 6vh;
+    background-color: #F97D7D;
+    border-radius: 50%; /* Makes the box round */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: #FFFDFA;
+    font-weight: bold;
+}
+
+.page{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.lost_and_found{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.lost_found_info{
+    display: flex;
+    flex-direction: column;
+}
+
+    /* Style the pictures to fit within the grid cells */
+.lost_and_found img {
+    max-width: 80%;
+    height: auto;
+}
+
+.lost_and_found h1{
+    text-align: center;
+    font-size: 4vh;
+}
+
+.lost_and_found p{
+    font-size: 2vh;
+}
+
+.lost_and_found button{
+    margin-right: 3vh;
+}
+
+@media (max-width: 1000px) {
+    .Intro {
+        padding: 10vh; /* Reduce the padding on smaller screens */
+      }
+  
+    .logo h {
+      font-size: 3vh; /* Adjust the font size on smaller screens */
+    }
+  
+    .logo p {
+      font-size: 1.8vh; /* Adjust the font size on smaller screens */
+    }
+    .logo img{
+        width: 40%;
+        height: auto;
+    }
+    .Information{
+        flex-direction: column;
+    }
+  
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* Adjust the grid columns on smaller screens */
+    }
+  
+    .grid-item p {
+      font-size: 1.8vh; /* Adjust the font size on smaller screens */
+    }
+  
+    .round-button {
+      width: 5vh; /* Adjust the button size on smaller screens */
+      height: 5vh;
+      margin-bottom: 2vh;
+    }
+  
+    .arrow-left {
+      font-size: 30px; /* Adjust the arrow size on smaller screens */
+    }
+  
+    .arrow-right {
+      font-size: 15px; /* Adjust the arrow size on smaller screens */
+    }
+  
+    .round-box {
+      font-size: 8px; /* Adjust the font size inside the round box on smaller screens */
+    }
+  
+    .page {
+      flex-direction: row; /* Stack the page elements vertically on smaller screens */
+    }
+  
+    .lost_and_found {
+      flex-direction: column; /* Stack the lost_and_found elements vertically on smaller screens */
+    }
+  
+  
+    .lost_and_found h1 {
+      font-size: 3.5vh; /* Adjust the font size for the lost_and_found title on smaller screens */
+    }
+  
+    .lost_and_found p {
+      font-size: 1.8vh; /* Adjust the font size for the lost_and_found text on smaller screens */
+    }
+
+    .round-button {
+        width: 4vh;
+        height: 4vh;
+        background-color: #53C4C7;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        position: relative;    
+      }
+
+      .round-box {
+        width: 4vh;
+        height: 4vh;
+        background-color: #F97D7D;
+        border-radius: 50%; /* Makes the box round */
+        font-size: 20px;
+        color: #FFFDFA;
+        font-weight: bold;
+        margin-bottom: 2vh;
+    }
+
+  }
+
+
+
+
+

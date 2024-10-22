@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Pawesome_profile_page</title>
+    <link rel="icon" type="Image/x-icon" href="Images/logo_48px.png">
+    <link rel="stylesheet" href="Stylesheets/header_footer.css">
+    <link rel="stylesheet" href="Stylesheets/pet_profile.css">
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="empty"></div>
+
+      <div id="websiteName_header">
+        <img id="logo_header" src="Images/logo_512px.png" alt="Pawesome logo">
+        <p>PAWESOME</p>
+      </div>
+      
+      <div class="empty"></div>
+
+      <nav id="nav_header">
+        <div id="hamburger">
+          <button id="hamburgerBtn"><label>&#8801;</label></button>
+
+          <div class="hamburgerContent">
+            <button onclick="window.location.href='homepage.html';">Home</button>
+          </div>
+          
+          <div class="empty"></div>
+          
+          <div class="hamburgerContent">
+            <button onclick="window.location.href='adoption_page.html';">Adopt</button>
+          </div>
+          
+          <div class="empty"></div>
+          
+          <div class="hamburgerContent">
+            <button onclick="window.location.href='donation.html';">Donate</button>
+          </div>
+          
+          <div class="empty"></div>
+          
+          <div class="hamburgerContent">
+            <button onclick="window.location.href='volunteer.html';">Volunteer</button>
+          </div>
+          
+          <div class="empty"></div>
+          
+          <div id="dropdown" class="hamburgerContent">
+            <button>More</button>
+  
+            <div class="dropdownContent">
+              <a>Pet Lost and Found</a>
+              <a href='pawesome_diaries.html'>Pawesome Diaries</a>
+              <a>Report Cruelty</a>
+              <a>Our Sponsors</a>
+              <a>FAQ</a>
+            </div>
+          </div>
+  
+          <div class="empty"></div>
+  
+          <div id="dropdown" class="hamburgerContent">
+            <button><img src="Images/user_512px.png" alt="User profile" id="user_header"></button>
+  
+            <div class="dropdownContent">
+              <a href="login.html">Log in</a>
+              <a href="signup.html">Sign Up</a>
+              <a href="login.html">Log Out</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="empty"></div>
+    </header>
+    <main>
+    <div class="container">
+      <div class="left-section">
+        <div class="pic_button">  
+        <button class="Round-button" onclick="prev()">
+          <span class="arrow-left">&#9666</span>
+        </button>
+        <img src="Images/Dog.png" alt="Dog" class="dog_image" >
+        <button class="Round-button" onclick="next()">
+          <span class="arrow-right">&#9654</span>
+        </button>
+        </div>
+        <a href="adoption_application.html"><button class="adopt-button"><b>I want to adopt!</b></button></a>
+      </div>
+        <div class="right-section">
+        <div class="box">
+          <center>
+            <p><b>Cookie</b></p>
+            <hr>
+          </center>
+            <p>Age: 5 months</p>
+            <p>Gender: Male</p>
+            <p>Breed: Chow Chow</p>
+            <p>Weight: 5kg</p>
+           <p>Animal Type: Dog</p>
+           <p>Location: PAWs Subang</p>
+          </font>
+        </div>
+        <div class="more_info_box">
+          <p><b>More information about me:</b></p>
+          <p>“I am good for car rides, house trained and a quick learner. I knows "sit", " wait", "give paw" and "walk nice". ”</font></p>
+          <img src="Images/logo.png" alt="Logo">
+        </div>
+        </div>
+    </div> 
+    <script src="Scripts/profile.js"></script>
+  </div>
+  </main>
+    <footer>
+      <div id="contact_footer">
+        <div id="websiteName_footer">
+          <img src="Images/logo_512px.png" alt="Logo">
+          <span>PAWESOME</span>
+        </div>
+        
+        <div>
+          Email: 
+          <a href="mailto:pawesome@gmail.com">pawesome@gmail.com</a>
+        </div>
+        
+        <div> 
+          Phone: +6011-22334455
+        </div>
+      </div>
+      
+      <div id="sitemap_footer">
+        <div id="sitemapLinks_footer">
+          <div id="sitemapColumn1_footer" >
+            <p class="firstSitemap_footer">Home</p>
+            <p class="middleSitemap_footer">Sign Up</p>
+            <p class="middleSitemap_footer">Adopt a Pet</p>
+            <p class="middleSitemap_footer">Make a Donation</p>
+            <p class="lastSitemap_footer">Become a Volunteer</p>
+          </div>
+          <div id="sitemapColumn2_footer">
+            <p class="firstSitemap_footer">Pet Lost and Found</p>
+            <p class="middleSitemap_footer">Pawesome Diaries</p>
+            <p class="middleSitemap_footer">Report Cruelty</p>
+            <p class="middleSitemap_footer">Our Sponsors</p>
+            <p class="lastSitemap_footer">FAQ</p>
+          </div>
+        </div>
+
+        <div id="copyright_footer">
+          Copyright © 2023 PAWESOME
+        </div>
+      </div>
+
+      <div id="socialMedia_footer">
+        <div id="socialMediaIcons_footer">
+          <img src="Images/facebook.png" alt="Link to Facebook">
+          <img src="Images/instagram.png" alt="Link to Instagram">
+          <img src="Images/twitter.png" alt="Link to Twitter">
+          <img src="Images/youtube.png" alt="Link to Youtube">
+        </div>
+
+        <div>
+          @pawesome
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

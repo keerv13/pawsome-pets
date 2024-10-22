@@ -1,0 +1,234 @@
+body{
+  display: flex;
+  flex-direction: column;
+  min-width: fit-content;
+}
+
+/* STRIP 1*/
+#hero_image{
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)),
+      url("../Images/Adopt\ Profile\ Header\ 1.svg");
+    background-color: #333333;
+    padding: auto;
+    height: 27rem;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+  }
+
+  #hero_image h1{
+    font-size: 3rem;
+    margin: 1rem;
+    font-weight: 900;
+    color: #FFFFFF;
+    width: fit-content;
+    text-shadow: 0 0 1rem #333333;
+    text-align: center;
+  }
+
+  #hero_image p{
+    color: #FFFFFF;
+    text-align: center;
+    width:60rem;
+  }
+
+  /*STRIP 2*/
+  #application_step {
+    height: 100rem;
+    background-color: #FFFDFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .horizontal-list {
+    margin: 20px 50px;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  
+  #application_icons {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .horizontal-list li {
+    margin-top: 0px;
+    display: inline-block;
+    margin: 0 55px; 
+  }
+  
+  .horizontal-list li strong {
+    display: inline;
+    
+  }
+  
+  .horizontal-list li p {
+    width: 14rem;
+  }
+  
+
+/*STRIP 3*/
+.FAQ {
+  height: 50rem;
+  background-color: #53C4C7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#accordion {
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  gap: 10px;
+}
+
+.FAQ h1 {
+  font-size: 3rem;
+  color: #333333;
+  text-decoration: underline;
+  text-align: center;
+  font-family: Verdana, Tahoma, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.FAQ li {
+  list-style: none;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  background: #FFFDFA;
+}
+
+.FAQ label {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-family: Verdana, Tahoma, sans-serif;
+  justify-content: space-between;
+  cursor: pointer;
+  color: black;
+}
+
+.FAQ li input[type="radio"] {
+  display: none;
+}
+
+.FAQ .content {
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  width: 100%; 
+}
+
+/* Show content when accordion is clicked*/
+.FAQ li input[type="radio"]:checked ~ .content {
+  max-height: 100px; 
+}
+
+/* Hide the content when the radio button is unchecked */
+.FAQ li input[type="radio"]:not(:checked) ~ .content {
+  max-height: 0;
+}
+
+/*STRIP 4*/
+#adoption_section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height:50rem;
+    position: relative;
+  }
+  
+  #left{
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #right{
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  #left{
+    background-color: #333333;
+    justify-content: flex-end;
+  }
+  
+  #right{
+    background-color: white;
+  }
+  
+  #rainbow1 img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 42%;
+  }
+  
+  #left .adoptMessage span{
+    font-size: 2.0rem;
+    font-weight: 700;
+    color: white;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin-top: 10px;
+    text-decoration: underline;
+  }
+
+  #left .adoptMessage p{
+    font-size: 0.8rem;
+    width:25rem;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: 200;
+    color: white;
+    margin-top: 10px;
+  }
+
+  #left #rainbow2 img {
+    position: absolute;
+    bottom: 0;
+    right: 58%;
+  }
+
+  #catBox{
+    padding-bottom: 12rem;
+  }
+  
+/*STRIP 4 FORM*/
+#right h1{
+  color: #F97D7D;
+  margin-left: 15px;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+#right #formTitle{
+  display: flex;
+  align-items: center
+}
+
+#shelter1, #shelter2, #shelter3{
+  width: fit-content;
+}
