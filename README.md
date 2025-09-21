@@ -12,7 +12,10 @@ Pawesome is a website that collaborates with various animal shelters in Malaysia
 2. Open ''homepage.html'' in browser
 
 ## Volunteer Page
+<img width="1900" height="3010" alt="Image" src="https://github.com/user-attachments/assets/8e153e05-5645-4cae-b700-64c4d0199958" />
+
 ## FAQ Page
+<img width="1920" height="3265" alt="Image" src="https://github.com/user-attachments/assets/568343dd-727b-445e-ace1-7618a82887dc" />
 
 ## key Features
 * Integration of reusable components (header, footer, forms)
