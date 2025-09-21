@@ -1,0 +1,211 @@
+#donate_section{
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)),
+      url("../Images/donate_banner.jpg");
+  background-color: #333333;
+  min-height: 35rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#donate_section p{
+  font-size: 1.1rem;
+  margin: 4rem;
+  font-weight: bold;
+  color: #f8f8f8;
+  width: fit-content;
+  text-align: center;
+  text-shadow: 0 0 1rem #333333;
+}
+
+#donate_section h1{
+  font-size: 3.5em;
+  margin: 1rem;
+  font-weight: bolder;
+  color: #f8f8f8;
+  width: fit-content;
+  text-shadow: 0 0 1rem #333333;
+  text-align: center;
+}
+
+#donate_section button{
+  width: fit-content;
+  background-color: #f97d7d;
+  border: 0.2rem solid black;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 1.7rem;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  border-radius: 2rem;
+  transition: 0.3s;
+  margin: 1rem;
+}
+
+#donate_section button:hover{
+  cursor: pointer;
+  border: 0.2rem solid #f97d7d;
+}
+
+#wishlist_intro_section{
+  background-color: #333333;
+  background-image: url(../Images/left_sparkle.png), url(../Images/right_sparkle.png);
+  min-height: 10rem;
+  padding: 1rem;
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#wishlist_intro_section p{
+  font-size: 1.1rem;
+  margin: 4rem;
+  font-weight: bold;
+  color: #f8f8f8;
+  width: fit-content;
+  text-align: center;
+}
+
+#wishlist_section{
+  background-color: #fffdfa;
+  background-image: url("../Images/wishlist_bg.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 30rem;
+  padding-bottom: 2rem;
+  min-height: 60rem;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#wishlist_section h1{
+  font-size: 3rem;
+  margin: 2rem;
+  font-weight: bolder;
+  color: #333333;
+  width: fit-content;
+  text-align: center;
+}
+
+#volunteer_section{
+  background-color: #333333;
+  background-image: url("../Images/raised_paws.png");
+  min-height: 15rem;
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#volunteer_section p{
+  font-size: 1.1rem;
+  margin: 2rem 4rem;
+  font-weight: bold;
+  color: #f8f8f8;
+  width: fit-content;
+  text-align: center;
+}
+
+#volunteer_section button{
+  width: fit-content;
+  background-color: #ffb449;
+  border: 0.2rem solid black;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 1.7rem;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  border-radius: 2rem;
+  transition: 0.3s;
+  margin: 1rem;
+}
+
+#volunteer_section button:hover{
+  cursor: pointer;
+  border: 0.2rem solid #ffb449;
+}
+
+#thank_you_section{
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.35)),
+    url("../Images/thank_you_banner.jpg");
+  background-color: #333333;
+  min-height: 35rem;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#thank_you_section h1{
+  font-size: 3.5em;
+  margin: 1rem;
+  font-weight: bolder;
+  color: #f8f8f8;
+  width: fit-content;
+  text-shadow: 0 0 1rem #333333;
+  text-align: center;
+}
+
+table{
+  width: 80%;
+  border-collapse: collapse;
+  padding: 1rem;
+  color: #333333;
+  table-layout: fixed;
+}
+
+
+#items{
+  border: 3px solid;
+  border-color: rgba(83, 196, 199, 0.7);
+  border-right-color: rgba(127, 201, 203, 0.7);
+  background-color: rgba(83, 196, 199, 0.7);
+}
+
+#description{
+  border: 3px solid;
+  border-color: rgba(83, 196, 199, 0.7);
+  border-left-color: rgba(127, 201, 203, 0.702);
+  background-color: rgba(83, 196, 199, 0.7);
+}
+
+th{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+td, tr, th{
+  border: 3px solid;
+  border-color: rgba(127, 201, 203, 0.7);
+  background-color: rgba(159, 230, 232, 0.7);
+  padding: 1.5rem;
+}
+
+#table_caption{
+  caption-side: bottom; 
+  text-align: left; 
+  padding: 1.2rem; 
+  font-weight: bold;
+  color: #8c8c8c;
+}

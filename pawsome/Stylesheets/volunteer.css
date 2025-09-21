@@ -1,0 +1,217 @@
+body{
+  min-width: fit-content;
+}
+
+#hero_image{
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)),
+      url("../Images/volunteerHeroimg.svg");
+    background-color: #333333;
+    padding: auto;
+    height: 27rem;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size:cover;
+  }
+
+  #hero_image h1{
+    font-size: 3rem;
+    margin: 1rem;
+    font-weight: 900;
+    color: #FFFFFF;
+    width: fit-content;
+    text-shadow: 0 0 1rem #333333;
+    text-align: center;
+  }
+
+  #hero_image p{
+    color: #FFFFFF;
+    text-align: center;
+    width:60rem;
+  }
+
+  /*VOLUNTEER QUOTE*/
+  #volunteer_quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(83, 196, 199, 0.5);
+  }
+  
+  #quote_section{
+    display: flex;
+    flex-direction: row;
+    min-width: 50%;
+    min-height: 2rem;
+    justify-content: space-between;
+  }
+  
+  #quotefmt{
+    flex-grow: 1;
+  }
+  
+  #volunteer_quote img{
+    width: 2rem;
+  }
+  
+  #quote{
+    border-style: solid none;
+    border-width: thin;
+    font-size: 1rem;
+    margin: 0;
+    align-self: center;
+    min-width: fit-content;
+    text-align: center;
+    white-space: pre-line;
+  }
+  
+  #openQuote{
+    padding-bottom: 5rem;
+    align-self: center;
+  }
+  
+  #closeQuote{
+    align-self: center;
+    padding-bottom: 4rem;
+    transform: scale(-1, -1);
+  }
+  
+/*VOLUNTEER DUTIES*/
+.volunteerDuties {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.box {
+  flex-basis: 33.333333%;
+  height: 350px; 
+}
+
+.volunteerDuties .box img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+  display: block; 
+}
+
+.volunteerDuties .box.Duty {
+  background-color: rgba(249, 125, 125, 0.5); /* Reduce opacity */
+  text-align: left; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-left: 0.8rem;
+}
+
+.volunteerDuties .box.Duty strong {
+  font-size: 1.8rem; 
+  padding: 0.6rem;
+}
+
+.volunteerDuties .box.Duty p {
+  font-size: 1.1rem; 
+  padding: 0 1rem; 
+}
+
+.volunteerDuties .box.Duty ul {
+  margin-left: 1rem; 
+  font-size: 1.2rem; 
+  padding: 0 1rem; 
+}
+
+.volunteerDuties .box.Duty li {
+  margin-bottom: 5px;
+}
+
+/*VOLUNTEER SIGNUP*/
+#volunteer_section{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height:54rem;
+  position: relative;
+}
+
+#left{
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #333333;
+  justify-content: flex-end;
+}
+
+#right{
+  width: 58%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+}
+
+#left .volunteerMessage span{
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: white;
+  font-family: Verdana, Tahoma, sans-serif;
+  text-decoration: underline;
+}
+
+#left .volunteerMessage p{
+  font-size: 1rem;
+  width:25rem;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-weight: 200;
+  color: white;
+  padding-top: 1rem;
+}
+
+#volunteerIcon{
+  padding-bottom: 13rem;
+  padding-top: 2rem;
+}
+
+
+/*SECTION 4 FORM*/
+#regForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#right h1{
+  color: #53C4C7;
+  margin-left: 15px;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+#right #formTitle{
+  display: flex;
+  align-items: center
+}
+
+.tab{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input{
+  display: inline;
+}
+
+#slot1, #slot2, #slot3, #slot4, #slot5, #shelter1, #shelter2, #shelter3{
+  width: fit-content;
+}

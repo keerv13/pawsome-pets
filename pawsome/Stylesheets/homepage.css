@@ -1,0 +1,382 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+button{
+  color: #000000;
+}
+
+/*Adopt section*/
+#adopt_section{
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)),
+    url("../Images/adoptBg.svg");
+  background-color: #333333;
+  padding: auto;
+  height: 27rem;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#adopt_section p{
+  font-size: 3rem;
+  margin: 1rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  width: fit-content;
+  text-shadow: 0 0 1rem #333333;
+  text-align: center;
+}
+
+#adopt_section button{
+  width: fit-content;
+  background-color: #ffb449;
+  border: 0.2rem solid black;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  transition: 0.3s;
+  margin: 1rem;
+}
+
+#adopt_section button:hover{
+  cursor: pointer;
+  border: 0.2rem solid #ffb449;
+}
+
+/*Donate section*/
+#donate_section{
+  height: 13rem;
+  background-color: #53c4c7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.donateEmpty1{
+  flex-grow: 4;
+}
+
+.donateEmpty2{
+  flex-grow: 1;
+}
+
+.donateEmpty3{
+  flex-grow: 3;
+}
+
+#sliderWrapper{
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#slider{
+  display: flex;
+  overflow-x:scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  max-width: 65rem;
+}
+
+#slider::-webkit-scrollbar{
+  height: 0.6em;
+}
+
+#slider::-webkit-scrollbar-track{
+  background-color: #ffefd9;
+  border-radius: 100rem;
+  
+}
+
+#slider::-webkit-scrollbar-thumb{
+  background-color: #ffb449;
+  border-radius: 100rem;
+  border: 0.15rem solid #ffefd9;
+}
+
+#slider1, #slider2, #slider3{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  scroll-snap-align: start;
+  min-width: 100%;
+  
+}
+
+#donate_section img{
+  width: 7rem;
+  margin: 1rem;
+}
+
+#donate_section p{
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 1rem;
+}
+
+#perMonth{
+  font-size: 1.5rem;
+}
+
+.cost{
+  font-size:4rem;
+  font-weight:1000;
+}
+
+#donate_section button{
+  background-color: #F97D7D;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 0.2rem solid black;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  transition: 0.3s;
+}
+
+#donate_section button:hover{
+  cursor: pointer;
+  border: 0.2rem solid #f97d7d;
+}
+
+/*About us section*/
+#aboutUs_section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#aboutUs_section h1{
+  text-align: center;
+  min-width: max-content;
+  white-space: nowrap;
+}
+
+#sloganDiv{
+  display: flex;
+  flex-direction: row;
+  min-width: 50%;
+  min-height: 6rem;
+  justify-content: space-between;
+}
+
+#aboutUsEmpty{
+  flex-grow: 1;
+}
+
+#aboutUs_section img{
+  width: 2rem;
+}
+
+#slogan{
+  font-size: 2rem;
+  margin: 0;
+  align-self: center;
+  text-align: center;
+}
+
+#openQuote{
+  align-self: flex-start;
+}
+
+#closeQuote{
+  transform: scale(-1, -1);
+  align-self: flex-end;
+}
+
+#aboutUsDescription{
+  width: 75%;
+  text-align: justify;
+  line-height: 2rem;
+  margin-bottom: 0;
+  
+}
+
+/*Collaborators section*/
+#collaborators_section{
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  text-align: center;
+}
+
+
+#collaborators{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+.collaboratorsEmpty{
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.collaborator{
+  width: 20rem;
+}
+
+#collaborators img{
+  width: 20rem;
+  height: 12rem;
+  object-fit: cover;
+}
+
+#penangDiv, #subangDiv, #ipohDiv{
+  margin: 0rem 2.6rem 1.5rem 2.6rem;
+}
+
+.collaboratorName{
+  font-weight: 600;
+}
+
+#collaborators a{
+  text-decoration: none;
+  color: #000000;
+}
+
+#collaborators a:hover{
+  color: #53c4c7;
+}
+
+/*Statistic section*/
+#statistic_section{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#left, #right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+#left{
+  background-color: #53c4c7;
+  justify-content: flex-end;
+}
+
+#right{
+  background-color: #F97D7D;
+}
+
+#adoptedNum{
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0.5rem 1rem;
+  
+}
+
+#shelterPetNum{
+  font-size: 4rem;
+  font-weight: 1000;
+  margin: 0.5rem 1rem;
+}
+
+.statisticDescription{
+  font-size: 1.4rem;
+  margin: 1rem;
+}
+
+/*Volunteer Section*/
+#volunteer_section{ 
+  background-image: linear-gradient(rgba(83,196,199, 0.3), 
+  rgba(249,125,125, 0.3), 
+  rgba(255,255,255,0), 
+  rgba(255,255,255,0)),
+  url("../Images/volunteerBg.png");
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 30rem 2.5fr;
+  grid-template-rows: 1fr 25rem 5fr;
+  width: 100%;
+  padding: 3rem 0 8rem 0;
+}
+
+#volunteerDiv{
+  width: 30rem;
+  line-height: 2rem;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 3px 10px -7px #333333;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  margin: 4rem;
+}
+
+video{
+  max-width: 48rem;
+  border-radius: 2rem;
+}
+
+@media(max-width: 800px){
+  video{
+    width: 75%;
+  }
+}
+
+#volunteer_section p{
+  font-size: 1.2rem;
+}
+
+#volunteer_section button{
+  width: fit-content;
+  background-color: #ffb449;
+  border: 0.2rem solid black;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  transition: 0.3s;
+  margin: 1rem;
+}
+#volunteer_section button:hover{
+  cursor: pointer;
+  border: 0.2rem solid #ffb449;
+}
+
+#volunteer_section h1{
+  margin: 1rem 0;
+}
+
+
+
