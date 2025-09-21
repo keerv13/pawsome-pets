@@ -11,7 +11,7 @@ Pawesome is a website that collaborates with various animal shelters in Malaysia
 ```Shell
 git clone https://github.com/keerv13/pawsome-pets
 ```
-2. Open 'homepage.html' in browser
+2. Open ```homepage.html``` in browser
 
 ## Volunteer Page
 <img width="1900" height="3010" alt="Image" src="https://github.com/user-attachments/assets/8e153e05-5645-4cae-b700-64c4d0199958" />
